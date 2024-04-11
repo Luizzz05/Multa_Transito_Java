@@ -7,25 +7,7 @@ import model.Carro;
 public class Funcao {
 
 	static Carro c = new Carro();
-	public void printcarro() {
-		int ano, velocidadeCarro;
-		String sano, svelocidadeCarro;
-		
-		c.setModelo(JOptionPane.showInputDialog("Digite o modelo do carro: "));
-		c.setPlaca(JOptionPane.showInputDialog("Digite a Placa do carro: "));
-		sano = JOptionPane.showInputDialog("Digite o ano de fabricação: ");
-		c.setAno(ano = Integer.parseInt(sano));
-		c.setCor(JOptionPane.showInputDialog("Digite a cor do carro: "));
-		svelocidadeCarro = JOptionPane.showInputDialog("Digite a velocidade do carro: ");
-		c.setVelocidadeCarro(Integer.parseInt(svelocidadeCarro));
-		
-		
-		JOptionPane.showMessageDialog(null, "Os dados co carro são: Modelo: "+ c.getModelo()
-																	+ " Placa: " + c.getPlaca()
-																	+ " Ano: "+ c.getAno()
-																	+ " Cor: " + c.getCor()
-																	+ " Velocidade: " + c.getVelocidadeCarro());
-	}
+	
 	
 	   public static void multaTransito() {
 	    	int velocidadeVia = 80;
@@ -34,7 +16,7 @@ public class Funcao {
 	            double multa = calcularMulta(velocidadeExcedida, velocidadeExcedida);
 	            JOptionPane.showMessageDialog(null, "Multa a ser paga: R$" + multa);
 	        } else {
-	        	JOptionPane.showMessageDialog(null, "O carro está dentro do limite de velocidade.");
+	        	JOptionPane.showMessageDialog(null, "O carro está dentro do limite de velocidade." + c.getModelo());
 	        }
 	    }
 

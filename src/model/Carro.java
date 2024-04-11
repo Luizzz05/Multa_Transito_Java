@@ -4,15 +4,15 @@ public class Carro {
 
 	private String modelo;
 	private String placa;
-	private int ano;
+	private String ano;
 	private String cor;
-	private int velocidadeCarro;
+	private String velocidadeCarro;
 	
 	public Carro() {
 		super();
 
 	}
-	public Carro(String modelo, String placa, int ano, String cor, int velocidadeCarro) {
+	public Carro(String modelo, String placa, String ano, String cor, String velocidadeCarro) {
 		super();
 		this.modelo = modelo;
 		this.placa = placa;
@@ -32,10 +32,10 @@ public class Carro {
 	public void setPlaca(String placa) {
 		this.placa = placa;
 	}
-	public int getAno() {
+	public String getAno() {
 		return ano;
 	}
-	public void setAno(int ano) {
+	public void setAno(String ano) {
 		this.ano = ano;
 	}
 	public String getCor() {
@@ -44,10 +44,10 @@ public class Carro {
 	public void setCor(String cor) {
 		this.cor = cor;
 	}
-	public int getVelocidadeCarro() {
+	public String getVelocidadeCarro() {
 		return velocidadeCarro;
 	}
-	public void setVelocidadeCarro(int velocidadeCarro) {
+	public void setVelocidadeCarro(String velocidadeCarro) {
 		this.velocidadeCarro = velocidadeCarro;
 	}
 
